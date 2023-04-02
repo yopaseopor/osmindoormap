@@ -182,7 +182,7 @@ var config = {
 			title: 'Indoor=yes',
 			query: '(node["indoor"="yes"]({{bbox}});node(w);way["indoor"="yes"]({{bbox}});node(w);relation["indoor"="yes"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'indoor/indoor_yes.svg',
-			iconStyle: 'background-color:#00FF00',
+			iconStyle: 'background-color:#FFFFFF',
 			style: function (feature) {
 				var key_regex = /^name$/
 				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
@@ -221,7 +221,7 @@ var config = {
 			title: 'Indoor=corridor',
 			query: '(node["indoor"="corridor"]({{bbox}});node(w);way["indoor"="corridor"]({{bbox}});node(w);relation["indoor"="corridor"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'indoor/corridor.svg',
-			iconStyle: 'background-color:#00FF00',
+			iconStyle: 'background-color:#FFFFFF',
 			style: function (feature) {
 				var key_regex = /^name$/
 				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
@@ -260,7 +260,7 @@ var config = {
 			title: 'highway=corridor',
 			query: '(node["highway"="corridor"]({{bbox}});node(w);way["highway"="corridor"]({{bbox}});node(w);relation["highway"="corridor"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'indoor/corridor.svg',
-			iconStyle: 'background-color:#00FF00',
+			iconStyle: 'background-color:#FFFFFF',
 			style: function (feature) {
 				var key_regex = /^name$/
 				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
@@ -299,7 +299,7 @@ var config = {
 			title: 'Indoor=area',
 			query: '(node["indoor"="area"]({{bbox}});node(w);way["indoor"="area"]({{bbox}});node(w);relation["indoor"="area"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'indoor/area.svg',
-			iconStyle: 'background-color:#00FF00',
+			iconStyle: 'background-color:#FFFFFF',
 			style: function (feature) {
 				var key_regex = /^name$/
 				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
@@ -338,7 +338,7 @@ var config = {
 			title: 'Indoor=room',
 			query: '(node["indoor"="room"]({{bbox}});node(w);way["indoor"="room"]({{bbox}});node(w);relation["indoor"="room"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'indoor/room.svg',
-			iconStyle: 'background-color:#00FF00',
+			iconStyle: 'background-color:#FFFFFF',
 			style: function (feature) {
 				var key_regex = /^name$/
 				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
@@ -377,7 +377,7 @@ var config = {
 			title: 'door=yes',
 			query: '(node["door"="yes"]({{bbox}});node(w);way["door"="yes"]({{bbox}});node(w);relation["door"="yes"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'indoor/door_yes.svg',
-			iconStyle: 'background-color:#00FF00',
+			iconStyle: 'background-color:#FFFFFF',
 			style: function (feature) {
 				var key_regex = /^name$/
 				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
@@ -416,7 +416,7 @@ var config = {
 			title: 'door=no',
 			query: '(node["door"="no"]({{bbox}});node(w);way["door"="no"]({{bbox}});node(w);relation["door"="no"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'indoor/door_no.svg',
-			iconStyle: 'background-color:#00FF00',
+			iconStyle: 'background-color:#FFFFFF',
 			style: function (feature) {
 				var key_regex = /^name$/
 				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
@@ -455,7 +455,7 @@ var config = {
 			title: 'door',
 			query: '(node["door"]({{bbox}});node(w);way["door"]({{bbox}});node(w);relation["door"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'indoor/door.svg',
-			iconStyle: 'background-color:#00FF00',
+			iconStyle: 'background-color:#FFFFFF',
 			style: function (feature) {
 				var key_regex = /^name$/
 				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
@@ -494,7 +494,7 @@ var config = {
 			title: 'window',
 			query: '(node["window"]({{bbox}});node(w);way["window"]({{bbox}});node(w);relation["window"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'indoor/window.svg',
-			iconStyle: 'background-color:#00FF00',
+			iconStyle: 'background-color:#FFFFFF',
 			style: function (feature) {
 				var key_regex = /^name$/
 				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
@@ -533,7 +533,7 @@ var config = {
 			title: 'Indoor=wall',
 			query: '(node["indoor"="wall"]({{bbox}});node(w);way["indoor"="wall"]({{bbox}});node(w);relation["indoor"="wall"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'indoor/wall.svg',
-			iconStyle: 'background-color:#00FF00',
+			iconStyle: 'background-color:#FFFFFF',
 			style: function (feature) {
 				var key_regex = /^name$/
 				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
@@ -600,7 +600,7 @@ var config = {
 						geometry: new ol.geom.Point(new ol.geom.LineString(coords).getCoordinateAt(0.1)), // show the image in the middle of the segment
 						image: new ol.style.Icon({
 							src: imgSrc + 'indoor/level.svg',
-							scale:0.07
+							scale:0.28
 						}),
 						text: new ol.style.Text({
 							text: maxspeed
@@ -617,7 +617,7 @@ var config = {
 			title: 'Indoor=no',
 			query: '(node["indoor"="no"]({{bbox}});node(w);way["indoor"="no"]({{bbox}});node(w);relation["indoor"="no"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'libraries/wheelchair_designated.svg',
-			iconStyle: 'background-color:#00FF00',
+			iconStyle: 'background-color:#FFFFFF',
 			style: function (feature) {
 				var key_regex = /^name$/
 				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
