@@ -374,6 +374,162 @@ var config = {
 
 		{
 			group: 'Test',
+			title: 'door=yes',
+			query: '(node["door"="yes"]({{bbox}});node(w);way["door"="yes"]({{bbox}});node(w);relation["door"="yes"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'libraries/wheelchair_designated.svg',
+			iconStyle: 'background-color:#00FF00',
+			style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(0,0,255,0.4)'
+				});
+
+				var stroke = new ol.style.Stroke({
+					color: '#000000',
+					width: 1.25
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Circle({
+						fill: fill,
+						stroke: stroke,
+						radius: 5
+					}),
+							text: new ol.style.Text({
+								text: name,
+								color: 'rgba(0,0,255,0.4)',
+								font: '10px Verdana',
+								offsetX : 0,
+								offsetY : 30
+							}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+
+},
+
+		{
+			group: 'Test',
+			title: 'door=no',
+			query: '(node["door"="no"]({{bbox}});node(w);way["door"="no"]({{bbox}});node(w);relation["door"="no"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'libraries/wheelchair_designated.svg',
+			iconStyle: 'background-color:#00FF00',
+			style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(0,0,255,0.4)'
+				});
+
+				var stroke = new ol.style.Stroke({
+					color: '#000000',
+					width: 1.25
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Circle({
+						fill: fill,
+						stroke: stroke,
+						radius: 5
+					}),
+							text: new ol.style.Text({
+								text: name,
+								color: 'rgba(0,0,255,0.4)',
+								font: '10px Verdana',
+								offsetX : 0,
+								offsetY : 30
+							}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+
+},
+
+		{
+			group: 'Test',
+			title: 'door',
+			query: '(node["door"]({{bbox}});node(w);way["door"]({{bbox}});node(w);relation["door"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'libraries/wheelchair_designated.svg',
+			iconStyle: 'background-color:#00FF00',
+			style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(0,0,255,0.4)'
+				});
+
+				var stroke = new ol.style.Stroke({
+					color: '#000000',
+					width: 1.25
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Circle({
+						fill: fill,
+						stroke: stroke,
+						radius: 5
+					}),
+							text: new ol.style.Text({
+								text: name,
+								color: 'rgba(0,0,255,0.4)',
+								font: '10px Verdana',
+								offsetX : 0,
+								offsetY : 30
+							}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+
+},
+
+		{
+			group: 'Test',
+			title: 'window',
+			query: '(node["window"]({{bbox}});node(w);way["window"]({{bbox}});node(w);relation["window"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'libraries/wheelchair_designated.svg',
+			iconStyle: 'background-color:#00FF00',
+			style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(0,0,255,0.4)'
+				});
+
+				var stroke = new ol.style.Stroke({
+					color: '#000000',
+					width: 1.25
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Circle({
+						fill: fill,
+						stroke: stroke,
+						radius: 5
+					}),
+							text: new ol.style.Text({
+								text: name,
+								color: 'rgba(0,0,255,0.4)',
+								font: '10px Verdana',
+								offsetX : 0,
+								offsetY : 30
+							}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+
+},
+
+		{
+			group: 'Test',
 			title: 'Indoor=wall',
 			query: '(node["indoor"="wall"]({{bbox}});node(w);way["indoor"="wall"]({{bbox}});node(w);relation["indoor"="wall"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'libraries/wheelchair_designated.svg',
@@ -412,7 +568,7 @@ var config = {
 },
 
 		{
-			group: 'Test',
+			group: 'Level',
 			title: 'LEVEL',
 			query: '(nwr[level]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxlength.svg',
