@@ -28,7 +28,7 @@
      showgrid="false"
      inkscape:zoom="16"
      inkscape:cx="27.1875"
-     inkscape:cy="19.75"
+     inkscape:cy="34.75"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -51,10 +51,6 @@
      id="defs3121" />
   <g
      id="g3135">
-    <path
-       d="m 6.414,24.051 c 0,-9.741 7.896,-17.637 17.638,-17.637 9.742,0 17.638,7.896 17.638,17.637 0,9.74 -7.896,17.638 -17.638,17.638 -9.742,0 -17.638,-7.897 -17.638,-17.638"
-       id="path3101"
-       style="fill:#ffffff" />
     <g
        id="icons"
        transform="matrix(1.665499,0,0,1.665499,-200.2809,-13012.628)"
