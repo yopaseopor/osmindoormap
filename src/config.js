@@ -454,7 +454,7 @@ var config = {
 			group: 'Indoor',
 			title: 'door',
 			query: '(node["door"]({{bbox}});node(w);way["door"]({{bbox}});node(w);relation["door"]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'indoor/door.svg',
+			iconSrc: imgSrc + 'indoor/door_yes.svg',
 			iconStyle: 'background-color:#FFFFFF',
 			style: function (feature) {
 				var key_regex = /^name$/
@@ -616,7 +616,7 @@ var config = {
 			group: 'Indoor',
 			title: 'Indoor=no',
 			query: '(node["indoor"="no"]({{bbox}});node(w);way["indoor"="no"]({{bbox}});node(w);relation["indoor"="no"]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'libraries/wheelchair_designated.svg',
+			iconSrc: imgSrc + 'indoor/indoor_no.svg',
 			iconStyle: 'background-color:#FFFFFF',
 			style: function (feature) {
 				var key_regex = /^name$/
