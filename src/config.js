@@ -600,7 +600,7 @@ var config = {
 						geometry: new ol.geom.Point(new ol.geom.LineString(coords).getCoordinateAt(0.1)), // show the image in the middle of the segment
 						image: new ol.style.Icon({
 							src: imgSrc + 'indoor/level.svg',
-							scale:0.28
+							scale:0.5
 						}),
 						text: new ol.style.Text({
 							text: maxspeed
