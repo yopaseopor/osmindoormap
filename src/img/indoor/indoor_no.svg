@@ -25,14 +25,14 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="1"
-     inkscape:cx="183.5"
+     inkscape:cx="184.5"
      inkscape:cy="237"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="Page-1" />
+     inkscape:current-layer="icons" />
   <defs
      id="defs3040">
     <linearGradient
@@ -2338,7 +2338,7 @@
          sodipodi:nodetypes="cccccccccccccc"
          style="fill:#1a1a1a;stroke:none" />
       <rect
-         style="fill:#aa0000;stroke:none;stroke-width:0.182653"
+         style="fill:#d40000;stroke:none;stroke-width:0.182653"
          id="rect1955"
          width="8.4596462"
          height="16.790136"
